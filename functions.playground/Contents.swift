@@ -10,4 +10,11 @@ func addTwoNumbers(){
     print(c)
 }
 
-addTwoNumbers()
+func subtractTwoNumbers(){
+    let d = 5
+    let e = 1
+    let f = d - e
+    print(f)
+}
+
+subtractTwoNumbers()

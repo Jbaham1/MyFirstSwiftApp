@@ -18,6 +18,7 @@ default:
 }
     
 //loops
+    //for loop
 var sum = 0
 
 for counter in 1...5{
@@ -26,3 +27,10 @@ for counter in 1...5{
 }
 
 print("outter scope",sum)
+
+//while loop
+var counter = 5
+while counter > 0{
+    counter -= 1
+    print("Hello")
+}

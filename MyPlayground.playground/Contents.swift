@@ -18,6 +18,11 @@ default:
 }
     
 //loops
+var sum = 0
+
 for counter in 1...5{
-    print("Hello!", counter)
+    sum += counter
+    print(sum)
 }
+
+print("outter scope",sum)

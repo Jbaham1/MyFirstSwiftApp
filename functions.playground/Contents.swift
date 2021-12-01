@@ -18,13 +18,13 @@ var greeting = "Hello, playground"
 //}
 
 //BUFF functions
-func addTwoNumbers(arg para:Int, arg2 para2:Int) -> Int{
-    let a = para
-    let b = para2
+func addTwoNumbers(number1:Int, number2:Int) -> Int{
+    let a = number1
+    let b = number2
     let c = a + b
     return c
 }
 
-let sum = addTwoNumbers(arg: 5, arg2: 5)
+let sum = addTwoNumbers(number1: 5, number2: 5)
 
 print(sum)

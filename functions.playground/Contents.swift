@@ -25,6 +25,6 @@ func addTwoNumbers(number1:Int, number2:Int) -> Int{
     return c
 }
 
-let sum = addTwoNumbers(number1: 5, number2: 5)
+let sum = addTwoNumbers(number1: 10, number2: 5)
 
 print(sum)

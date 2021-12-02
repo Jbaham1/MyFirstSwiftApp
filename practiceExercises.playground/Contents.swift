@@ -101,3 +101,12 @@ walkNorth()
 walkNorth()
 walkWest()
 walkSouth()
+
+func walk(_ direction:String, _ steps:Int) -> String{
+    //-> is what you expect to return
+        //_ does not mean you shouldnt label
+    return "You have walked " + String(steps) + " steps to the " + direction
+    //Cast an Int to a String 'String(Int)'?
+}
+let walking = walk("left",5)
+print(walking)

@@ -48,6 +48,18 @@ default:
     print("Operator does not exist")
 }
 
+//E5
+var drawPixel:String = "J"
+var height:Int = 8
+
+for columnPixel in 1...height{
+    var tempRow:String = ""
+    for columnPixel in 1...columnPixel{
+        tempRow += drawPixel
+        //for some strange reason this part took the longest to understand but can use operators on strings!!!
+    }
+    print(tempRow)
+}
 
 
 

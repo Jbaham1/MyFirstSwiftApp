@@ -29,7 +29,15 @@ class Employee: Person{
 
 class Manager:Employee {
     var teamSize = 0
-    
+    var bonus:Int{
+        //this is a computed property
+            //when accessed code will run then return value
+        return teamSize * 1000
+    }
+    init(name:String, team:Int){
+        super.init(name:)
+        teamSize = team
+    }
     override func doWork() {
         super.doWork()
         
@@ -39,3 +47,6 @@ class Manager:Employee {
         print("I'm firing people")
     }
 }
+
+let m = Manager("Kate", 11)
+print(m.bonus)

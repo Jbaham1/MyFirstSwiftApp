@@ -1,9 +1,18 @@
 import UIKit
 
 
-class Employee{
-    
+class Person{
     var name = ""
+    
+//    init(){
+//        //Initializer func that is native to all classesf
+                //can be customized
+//    }
+}
+
+class Employee: Person{
+
+
     var salary = 0
     var role = ""
     
@@ -49,12 +58,7 @@ var teamSize = 0
     }
 }
 
-var m = Manager()
-m.name = "Maggie"
-m.salary = 2000
-m.role = "Manager of IT"
-m.teamSize = 10
-m.doWork()
-m.firePeople()
+Person()
+
 
 

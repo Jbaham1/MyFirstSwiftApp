@@ -78,35 +78,71 @@ import UIKit
 //    print("  ",interestGain, "in interest payments")
 //    yearsElapsed += 1
 //}while yearsElapsed != yearsToInvest
+//
+////E7
+//func walkNorth() {
+//    print("You walked North.")
+//}
+//
+//func walkSouth(){
+//    print("You walked South.")
+//}
+//
+//func walkEast(){
+//    print("You walked East")
+//}
+//
+//func walkWest(){
+//    print("You walked West")
+//}
+//
+//walkEast()
+//walkNorth()
+//walkNorth()
+//walkWest()
+//walkSouth()
+//
+//func walk(_ direction:String, _ steps:Int) -> String{
+//    //-> is what you expect to return
+//        //_ does not mean you shouldnt label
+//    return "You have walked " + String(steps) + " steps to the " + direction
+//    //Cast an Int to a String 'String(Int)'?
+//}
+//let walking = walk("left",5)
+//print(walking)
 
-//E7
-func walkNorth() {
-    print("You walked North.")
+//E9
+class Pets{
+    var name = ""
+    var age = 0
+    
+    func feed(){
+        print("\(name), has been fed.")
+        //use \(var) in middle of string else concat normally
+    }
+    
+    func clean(){
+        print("\(name), has taken a bath.")
+        //use \(var) in middle of string else concat normally
+    }
+    
+    func play(){
+        print("\(name), enjoyed playing with you")
+        //use \(var) in middle of string else concat normally
+    }
+    
+    func sleep(){
+        print("\(name), went to sleep")
+        //use \(var) in middle of string else concat normally
+    }
+
+    
 }
 
-func walkSouth(){
-    print("You walked South.")
-}
+var pet = Pets()
+pet.name = "Boris"
 
-func walkEast(){
-    print("You walked East")
-}
-
-func walkWest(){
-    print("You walked West")
-}
-
-walkEast()
-walkNorth()
-walkNorth()
-walkWest()
-walkSouth()
-
-func walk(_ direction:String, _ steps:Int) -> String{
-    //-> is what you expect to return
-        //_ does not mean you shouldnt label
-    return "You have walked " + String(steps) + " steps to the " + direction
-    //Cast an Int to a String 'String(Int)'?
-}
-let walking = walk("left",5)
-print(walking)
+pet.clean()
+pet.feed()
+pet.play()
+pet.sleep()

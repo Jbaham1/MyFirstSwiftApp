@@ -14,21 +14,33 @@ class Employee{
     
 }
 
-let a:Int = 10
-let b:String = "Ted"
-var c:Employee = Employee()
+//let a:Int = 10
+//let b:String = "Ted"
+//var c:Employee = Employee()
+//
+//c.name = b
+////c.salary = 1000
+//print(c.salary)
+//
+//c.doWork()
+//
+//var d = Employee()
+//d.name = "Sarah"
+//d.role = "Manager"
+//d.salary = 1000
+//
+//d.doWork()
 
-c.name = b
-//c.salary = 1000
-print(c.salary)
+//Inheritance
 
-c.doWork()
+class Manager: Employee {
+    
 
-var d = Employee()
-d.name = "Sarah"
-d.role = "Manager"
-d.salary = 1000
+    
+}
 
-d.doWork()
-
-
+var m = Manager()
+m.name = "Maggie"
+m.salary = 2000
+m.role = "Manager of IT"
+m.doWork()

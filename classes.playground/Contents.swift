@@ -43,6 +43,10 @@ var teamSize = 0
         print("I'm managing people")
         salary += 2
     }
+    
+    func firePeople(){
+        print("I'm firing people")
+    }
 }
 
 var m = Manager()
@@ -51,3 +55,6 @@ m.salary = 2000
 m.role = "Manager of IT"
 m.teamSize = 10
 m.doWork()
+m.firePeople()
+
+

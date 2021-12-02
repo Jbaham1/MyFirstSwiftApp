@@ -15,4 +15,39 @@ var age:Int = 28
 var cashOnHand:Double = 600
 var hasChildren:Bool = false
 
-print(firstName, lastName, gender, age, cashOnHand, hasChildren)
+//print(firstName, lastName, gender, age, cashOnHand, hasChildren)
+//E3
+
+
+if hasChildren || age > 18 {
+    print("Adulting is hard I can't buy the game because I need to pay bills")
+} else{
+    print("I'm young and I can do what I want so gimme that game!")
+}
+
+//E4
+var strOperator:String = "*"
+var num1:Int = 2
+var num2:Int = 19
+var result:Int = 0
+
+switch strOperator{
+case "+":
+    result = num1 + num2
+    print(result)
+case "-":
+    result = num1 - num2
+    print(result)
+case "*":
+    result = num1 * num2
+    print(result)
+case "/":
+    result = num1 / num2
+    print(result)
+default:
+    print("Operator does not exist")
+}
+
+
+
+

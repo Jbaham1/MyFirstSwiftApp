@@ -35,12 +35,19 @@ class Employee{
 
 class Manager: Employee {
     
+var teamSize = 0
 
-    
+    override func doWork() {
+        super.doWork()
+        
+        print("I'm managing people")
+        salary += 2
+    }
 }
 
 var m = Manager()
 m.name = "Maggie"
 m.salary = 2000
 m.role = "Manager of IT"
+m.teamSize = 10
 m.doWork()

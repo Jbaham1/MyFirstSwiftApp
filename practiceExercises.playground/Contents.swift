@@ -54,12 +54,29 @@ var height:Int = 8
 
 for columnPixel in 1...height{
     var tempRow:String = ""
-    for columnPixel in 1...columnPixel{
+    for _ in 1...columnPixel{
+        //replace second column pixel with an "_"
+            //look deeper into that
         tempRow += drawPixel
         //for some strange reason this part took the longest to understand but can use operators on strings!!!
     }
     print(tempRow)
 }
 
+//E6
+    //cashOnHand already created
+var runningCash:Double
+var yearsToInvest:Int = 20
+var percentGain:Double = 0.0856
+var yearsElapsed:Int = 0
+print("you've got a great rate! Lets crunch the numbers")
+repeat{
+    
+    print("By year ",yearsElapsed + 1," you'll make ",cashOnHand)
+    var interestGain:Double = cashOnHand * percentGain
+    print(" ",interestGain, "in interest payments")
+    cashOnHand += interestGain
+    yearsElapsed += 1
+}while yearsElapsed != yearsToInvest
 
 
